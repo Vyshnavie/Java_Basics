@@ -69,7 +69,17 @@ public class Unit1 {
 	 * @return
 	 */
 	public int[] get_multiples_desc(int number, int count) {
-		return null;
+		int[] output = new int[count];
+	      int n = 0;
+	      int i = 0;
+	      if(number == 0 || count == 0) {
+	        return null;
+	      }
+	      for(n = count * number; n >= number; n = n - number ) {
+	        output[i] = n;
+	        i++;
+	      }
+	      return output; 
 	}
 
 	/**
@@ -111,6 +121,15 @@ public class Unit1 {
 	 * @return
 	 */
 	public int get_ascii_distance(char first, char second) {
-		return 0;
+		int output = 0;
+	      int a = (int)first;
+	      int b = (int)second;
+	      if(b > a) {
+	       output = b - a;
+	      }
+	      else {
+	      output = a - b;
+	      }
+	      return output;
 	}
 }
