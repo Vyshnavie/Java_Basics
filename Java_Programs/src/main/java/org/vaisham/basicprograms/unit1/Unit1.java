@@ -16,7 +16,15 @@ public class Unit1 {
 	 * @return
 	 */
 	public int[] get_odds_desc(int count) {
-		return null;
+		   if(count == 0) return null;
+		      
+		      int[] output = new int[count];
+		      int index = 0;
+		      for(int n = 2 * count - 1; n >= 1; n = n - 2) {
+		        output[index] = n;
+		        index++;
+		      }
+		      return output;
 	}
 
 	/**
