@@ -20,7 +20,18 @@ public class Unit2 {
 	 * @return
 	 */
 	public String convertLowerToUpperAndUpperToLower(String str) {
-		return null;
+		
+
+		if(str == null || str.isEmpty() || str.equals("")) return str;
+		
+		char[] input = str.toCharArray();
+		for(int i = 0; i < str.length(); i++) {
+			if(input[i] >= 'a' && input[i] <= 'z')
+				input[i] = (char) (input[i] - 32);
+			else if(input[i] >= 'A' && input[i] <= 'Z')
+				input[i] = (char) (input[i] + 32);
+		}
+		return new String(input);
 	}
 	
 	/**
