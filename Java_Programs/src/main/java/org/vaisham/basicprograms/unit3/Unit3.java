@@ -27,9 +27,45 @@ public class Unit3 {
      * @return
      */
     public String decodeStringType1(String encodedString) { 
-        return null;
-    }
+    	
+    	/*
+        Step 1: check for base conditions
+        Step 2: look till # or endOfString
+        Step 3: construct the String
+        */
+        
+        if(encodedString == "null" || encodedString.isEmpty() || encodedString.equals("")) 
+        { return encodedString;
+        }
+        
+        int number = 0;
+        StringBuilder result = new StringBuilder();
+        
+        for(int index = 0; index < encodedString.length(); index++) {
+          if(encodedString.charAt(index) >= '0' && encodedString.charAt(index) <= '9') {
+            number *= 10;
+            number += ((int)encodedString.charAt(index) - (int)'0');
+          }
+          else {
+            result.append(getChar(number));
+            number = 0;
+          }
+        }
+        if(number != 0) {
+            result.append(getChar(number));
+        }
+        return result.toString();
+      }
 
+    /**
+    *  Use this helper function
+    create simple helper functions
+    
+    **/
+      private char getChar(int index) {
+        char a = (char)((int)'a' + index - 1);
+        return a;
+      }
     /**
      *
      * Given a string represented as an encoded String. For example
