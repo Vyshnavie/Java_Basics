@@ -11,7 +11,7 @@ public class Unit4 {
      * @param input2
      * @return
      */
- /*   public boolean isEqual(char[] input1, char[] input2) {
+   public boolean isEqual(char[] input1, char[] input2) {
     
     
     	if(input1 == null && input2 == null ) {
@@ -36,7 +36,7 @@ for(int i = 0; i < input1.length; i++) {
         
     }
 
-    *//**
+    /**
      * given two Strings
      * compare both the Strings and return true if
      * they are equal
@@ -47,20 +47,23 @@ for(int i = 0; i < input1.length; i++) {
      * @param input1
      * @param input2
      * @return
-     *//*
+     */
     public boolean isEqual(String input1, String input2) {
-    	if(input1 == null || input2 == null) {
-    		return true;
-    	}
-    else if(input1.length() == input2.length()) {
-    		return true;
-    	}
-    	
-    	else {
+    /*	char[] ch = input1.toCharArray();
+    	char[] ch1 = input2.toCharArray();
+    	if(input1.isEmpty() || input2.isEmpty()) {
     		return false;
+    	}*/
+    	
+    	 if(input1.length() == input2.length()) {
+    		return true;
     	}
     	
-    }*/
+    	else 
+    		return false;
+    	
+    	
+    }
 
     /**
      * given a string,
@@ -74,7 +77,7 @@ for(int i = 0; i < input1.length; i++) {
      * @param input
      * @return
      */
-    public boolean isPalindrome(String input) {
+   public boolean isPalindrome(String input) {
     	if(input == null) {
     		return false;
     	}

@@ -8,7 +8,7 @@ public class Unit4Test {
 
     Unit4 unit4 = new Unit4();
 
-  /* @Test
+   @Test
     public void testisEqualCharArrays1() {
         char[] input1 = {'a', 'p', 'p', 'l', 'e'};
         char[] input2 = {'a', 'p', 'p', 'l', 'e'};
@@ -62,9 +62,9 @@ public class Unit4Test {
         char[] input1 = {'a', 'p', 'p', 'l', 'e'};
         char[] input2 = {'a', 'p', 'p', 'l', 'e'};
         Assert.assertEquals(true, unit4.isEqual(input1, input2));
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void testisEqualString1() {
         char[] input1 = {'a', 'p', 'p', 'l', 'e'};
         char[] input2 = {'a', 'p', 'p', 'l', 'e'};
@@ -118,9 +118,9 @@ public class Unit4Test {
         char[] input1 = {'a', 'p', 'p', 'l', 'e'};
         char[] input2 = {'a', 'p', 'p', 'l', 'e'};
         Assert.assertEquals(true, unit4.isEqual(new String(input1), new String(input2)));
-    }*/
+    }
 
-    @Test
+  @Test
     public void testisPalindrome1() {
         String str = "";
         Assert.assertEquals(true, unit4.isPalindrome(str));
