@@ -1,7 +1,7 @@
 package org.vaisham.basicprograms.assignment1.triangle;
 
 public interface ITriangle {
-	public void setLength(int length);
-	public void setHeight(int height);
-	public int getArea();
+	public void setLength(double length);
+	public void setHeight(double height);
+	public double getArea();
 }

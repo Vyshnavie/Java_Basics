@@ -5,18 +5,20 @@ public class Rectangle implements IRectangle{
 	int l, b;
 	
 	public void setLength(int length) {
-		this.l = b;
+		this.l = length;
 	}
 
 	public void setBreadth(int breadth) {
 		// TO - DO
+		this.b = breadth;
 	}
 
 	/**
 	 * fill this
 	 */
 	public int getArea() {
-		return 0;
+		int Area = l * b;
+		return Area;
 	}
 
 }

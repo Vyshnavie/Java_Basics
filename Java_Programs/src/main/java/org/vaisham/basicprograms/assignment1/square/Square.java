@@ -19,7 +19,8 @@ public class Square implements ISquare{
 	 * 
 	 */
 	public int getArea() {
-		return 0;
+		int Area = s*s;
+		return Area;
 	}
 
 }

@@ -2,22 +2,25 @@ package org.vaisham.basicprograms.assignment1.triangle;
 
 public class Triangle implements ITriangle {
 
-	int l, h;
+	double l, h;
 	
-	public void setLength(int length) {
+	public void setLength(double length) {
 		// TO - DO
+		this.l = length;
 	}
 
-	public void setHeight(int height) {
+	public void setHeight(double height) {
 		// TO - DO
+		this.l = height;
 	}
 
 	/**
 	 * calculate the area of a triangle and return it
 	 */
-	public int getArea() {
+	public double getArea() {
 		// TO - DO
-		return 0;
+		double Area = 0.5 * l * h;
+		return Area;
 	}
 
 }

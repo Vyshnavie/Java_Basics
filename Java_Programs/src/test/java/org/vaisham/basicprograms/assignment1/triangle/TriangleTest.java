@@ -12,6 +12,6 @@ public class TriangleTest {
 		ITriangle triangle = new Triangle();
 		triangle.setHeight(10);
 		triangle.setHeight(40);
-		Assert.assertEquals(200, triangle.getArea());
+		Assert.assertEquals(200, triangle.getArea(),0.0f);
 	}
 }

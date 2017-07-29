@@ -11,6 +11,6 @@ public class RectangleTest {
 		IRectangle rectangle = new Rectangle();
 		rectangle.setLength(10);
 		rectangle.setBreadth(20);
-		Assert.assertEquals(100, rectangle.getArea());
+		Assert.assertEquals(200, rectangle.getArea());
 	}
 }
